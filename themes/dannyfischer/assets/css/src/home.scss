@@ -1,0 +1,36 @@
+.title {
+	padding: 25px 0 0 50px;
+}
+.title-text {
+	font-family: 'Josefin Slab', sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	height: 100%;
+}
+
+.cover-A {
+	background-image: 
+		linear-gradient(
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		),
+		url('/storage/app/media/vampires.jpg');
+}
+
+.cover-B {
+	background-color: #ff9999;
+}
+.cover-D {
+	background-image: 
+		linear-gradient(
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		),
+		url('/storage/app/media/purpledanny1.jpg');
+}
+.cover-C {
+	background-color: #eeee77;
+}
+.cover-E {
+	background-color: #ffff99;
+}
