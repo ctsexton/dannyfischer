@@ -1,6 +1,7 @@
 .theme-body {
 	position: absolute;
 	top: 0;
+	//left: 20%;
 	background-color: #eeeeee;
 	max-width: 100%;
 	width: 100%;
@@ -13,8 +14,13 @@
 	top: 0;
 	width: 100%;
 	min-width: 100%;
+	height: 100%;
 	margin: 0;
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
+	@media #{$large} {
+		background-position: left;
+	}
 }
 
 .text-box {
@@ -24,8 +30,11 @@
 }
 
 .simple-text {
-	font-family: 'Josefin Slab', sans-serif;
+	font-family: $font_A;
 	font-size: 0.75rem;
 	line-height: 1em;
-	color: white;
+	color: black;
+	@media #{$large} {
+		font-size: 2rem;
+	}
 }

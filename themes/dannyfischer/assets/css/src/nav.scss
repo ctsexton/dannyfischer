@@ -1,31 +1,38 @@
 .menu-base {
-	min-width: 20%;
-	width: 20%;
-	display: none;
-	background-color: #00aaff;
-	min-height: 100%;
+	width: 100%;
+	display: block;
+	background: transparent;
+	height: 50px;
 	position: fixed;
+	z-index: 10;
 }
 
 .menu--title {
 	padding: 20px;
 	font-family: 'Sanchez';
-	font-size: 42px;
-	text-align: center;
+	font-size: 2rem;
+	text-align: left;
 	background: #cccccc;
+	display: none;
 }
 
 .menu--list {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 	> li {
-		padding: 20px 0 20px 20px;
+		display: inline;
+		width: 200px;
+		padding: 20px;
 		font-family: 'Sanchez';
-		font-size: 42px;
-		color: black;
-		background: rgba(0,0,0,0.25);
+		font-size: 1.5rem;
+		color: white;
+		background: rgba(255,255,255,0);
 		line-height: 1.5em;
 		cursor: pointer;
+		text-align: center;
 		&:hover {
-			background: rgba(0,0,0,0.1);
+			background: rgba(255,255,255,0.25);
 		}
 	}
 }

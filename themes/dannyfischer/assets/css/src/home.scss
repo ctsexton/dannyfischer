@@ -1,11 +1,20 @@
 .title {
-	padding: 25px 0 0 50px;
+	padding: 25px 0 0 25px;
 }
 .title-text {
-	font-family: 'Josefin Slab', sans-serif;
-	font-size: 1.5rem;
+	font-family: $font_B;
+	font-size: 2rem;
 	color: white;
 	height: 100%;
+	@media #{$large} {
+		font-size: 6em;
+	}
+}
+
+#main-title {
+	@media #{$large} {
+		font-size: 10em;
+	}
 }
 
 .cover-A {
@@ -18,7 +27,11 @@
 }
 
 .cover-B {
-	background-color: #ff9999;
+	//background-color: #d04444;
+	background-color: #bbbbaa;
+}
+.cover-C {
+	background-color: #9999a0;
 }
 .cover-D {
 	background-image: 
@@ -26,11 +39,8 @@
 			rgba(0,0,0,0.5),
 			rgba(0,0,0,0.5)
 		),
-		url('/storage/app/media/purpledanny1.jpg');
-}
-.cover-C {
-	background-color: #eeee77;
+		url('/storage/app/media/dannygroup.jpg');
 }
 .cover-E {
-	background-color: #ffff99;
+	background-color: #666666;
 }
