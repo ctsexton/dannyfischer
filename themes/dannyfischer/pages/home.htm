@@ -7,8 +7,11 @@ is_hidden = 0
 ==
 <div class="cover cover-A" id="topdiv">
 	<div class="title">
-		<div id="main-title" class="title-text">
-			Danny<br> Fischer.<br><br> Drummer.
+		<div class="main-title">
+			Danny<br> Fischer.
+		</div>
+		<div class="main-subtitle">
+			Drummer.
 		</div>
 	</div>
 </div>
@@ -25,8 +28,11 @@ is_hidden = 0
 			Biography
 		</div>
 	</div>
-	<div id="bio-text" class="text-box simple-text white-on-black">
-		Danny Fischer left a huge gap in the music scene of his native Melbourne, Australia when he relocated to New York in 2004. A 2002 review called Danny “possibly the most in-demand jazz drummer in Melbourne, having worked with a long list of Australian and international musicians including Barney McAll, Gary Bartz, James Williams, George Colligan & Paul Bollenbeck…..” Since relocating to New York, he has been in demand as a sideman, having just recently returned from a tour of Australia with Kurt Rosenwinkel and Barney McAll and has performed at Radio City Music Hall alongside Patty LaBelle, Chaka Khan, Gladys Knight and Diana Ross.
+	<div class="container">
+		<div id="bio-text" class="text-box simple-text black-on-white">
+			{% content "bio" %}
+		</div>
+		<img class="square-img" src="storage/app/media/dannyandjules.jpg">
 	</div>
 </div>
 <div class="cover cover-D" id="recdiv">
