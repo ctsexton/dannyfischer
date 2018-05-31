@@ -3,11 +3,10 @@
 }
 .title-text {
 	font-family: $font_B;
-	font-size: 2rem;
+	font-size: 10vh;
 	color: white;
-	height: 100%;
 	@media #{$large} {
-		font-size: 6em;
+		font-size: 20vh;
 	}
 }
 
@@ -28,18 +27,18 @@
 
 .cover-B {
 	//background-color: #d04444;
-	background-color: #bbbbaa;
+	background-color: #ffd53b;
 }
 .cover-C {
-	background-color: #9999a0;
-}
-.cover-D {
 	background-image: 
 		linear-gradient(
 			rgba(0,0,0,0.5),
 			rgba(0,0,0,0.5)
 		),
 		url('/storage/app/media/dannygroup.jpg');
+}
+.cover-D {
+	background-color: #bbbbaa;
 }
 .cover-E {
 	background-color: #666666;

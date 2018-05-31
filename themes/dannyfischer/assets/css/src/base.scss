@@ -26,15 +26,32 @@
 .text-box {
 	padding: 20px;
 	margin: 20px;
-	background-color: rgba(0,0,0,0.1);
 }
 
 .simple-text {
 	font-family: $font_A;
 	font-size: 0.75rem;
 	line-height: 1em;
-	color: black;
 	@media #{$large} {
 		font-size: 2rem;
 	}
+}
+
+.white-on-black {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.white-on-white {
+	color: white;
+	background-color: rgba(255,255,255,0.25);
+}
+
+.white-on-grey {
+	color: white;
+	background-color: rgba(100,100,100,0.75);
+}
+
+#bio-text {
+	width: 66%;
 }

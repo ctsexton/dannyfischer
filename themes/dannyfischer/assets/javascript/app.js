@@ -10,6 +10,7 @@ function setupWindow() {
 	}
 	$(document).ready(function() {
 
+		scroller('#top', '#topdiv');
 		scroller('#shows', '#showdiv');
 		scroller('#bio', '#biodiv');
 		scroller('#recs', '#recdiv');
