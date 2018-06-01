@@ -1,11 +1,17 @@
 .upcomingevents {
 	background: #eeeeee;
+	//background: rgba(255,255,255,0.75);
 	padding: 10px;
 	font-family: $font_B;
 	@media #{$large} {
-		width: 66%;
+		width: 75%;
+		padding: 1em 0;
 		margin: 0 auto;
 		font-size: 1.5rem;
+		> li {
+			//margin: 0 0 0 12.5%;
+			text-align: center;
+		}
 	}
 }
 

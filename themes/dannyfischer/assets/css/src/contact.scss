@@ -3,12 +3,14 @@
 	display: block;
 	padding: 15px;
 	width: 100%;
-	max-width: 900px;
 	background: #eeeeee;
 	margin: 30px auto 0;
 	letter-spacing: 0.05em;
 	font-family: $font_B;
 	font-size: 1rem;
+	@media #{$large} {
+		max-width: 75%;
+	}
 	input[type="text"], textarea {
 		line-height: 150%;
 		background: #eeeeee;
