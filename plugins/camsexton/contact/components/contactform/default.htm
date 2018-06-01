@@ -1,0 +1,19 @@
+<form method="POST" class="contact-form" data-request="onSend" data-request-validate>
+	<div id="formContent">
+		<div>
+			<div id="contact-inputs">
+				Your Name:<br>
+				<input type="text" name="name" autocomplete="name" autofocus>
+				<div data-validate-for="name"></div>
+				<br>
+				Your Email:<br>
+				<input type="text" autocomplete="email" name="email">
+				<div data-validate-for="email"></div>
+				<br>
+			</div>
+			<div>Message:</div>
+			<textarea name="content" cols="50" rows="7"></textarea><br>
+			<button data-attach-loading>Submit</button>
+		</div>
+	</div>
+</form>	

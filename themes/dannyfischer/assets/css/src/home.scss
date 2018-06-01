@@ -1,5 +1,8 @@
 .title {
-	padding: 0 0 25px 0;
+	padding: 25px 0 25px 0;
+	position: sticky;
+	top: 0;
+	min-width: 100%;
 }
 .title-text {
 	font-family: $font_B;
@@ -9,6 +12,10 @@
 	@media #{$large} {
 		font-size: 7vw;
 	}
+}
+
+.main-title--container {
+	padding: 25px 0;
 }
 
 .main-title {
@@ -73,5 +80,5 @@
 	background-color: #bbbbaa;
 }
 .cover-E {
-	background-color: #666666;
+	background-color: #6666ff;
 }

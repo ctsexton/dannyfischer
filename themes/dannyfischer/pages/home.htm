@@ -4,9 +4,12 @@ layout = "base"
 meta_title = "Danny Fischer"
 meta_description = "Danny Fischer - Melbourne drummer."
 is_hidden = 0
+
+[upcomingevents 'upcoming']
+[contactform]
 ==
 <div class="cover cover-A" id="topdiv">
-	<div class="title">
+	<div class="main-title--container">
 		<div class="main-title">
 			Danny<br> Fischer.
 		</div>
@@ -16,14 +19,18 @@ is_hidden = 0
 	</div>
 </div>
 <div class="cover cover-B" id="showdiv">
-	<div class="title">
+	<div class="title cover-B">
 		<div class="title-text">
-			Upcoming<br>Performances
+			Shows
 		</div>
+	</div>
+	<div>
+		
+		{% component 'upcoming' %}
 	</div>
 </div>
 <div class="cover cover-C" id='biodiv'>
-	<div class="title">
+	<div class="title cover-C">
 		<div class="title-text">
 			Biography
 		</div>
@@ -32,20 +39,23 @@ is_hidden = 0
 		<div id="bio-text" class="text-box simple-text black-on-white">
 			{% content "bio" %}
 		</div>
-		<img class="square-img" src="storage/app/media/dannyandjules.jpg">
 	</div>
 </div>
 <div class="cover cover-D" id="recdiv">
-	<div class="title">
+	<div class="title cover-D">
 		<div class="title-text">
 			Recordings
 		</div>
 	</div>
 </div>
 <div class="cover cover-E" id="contactdiv">
-	<div class="title">
+	<div class="title cover-E">
 		<div class="title-text">
 			Teaching
 		</div>
+	</div>
+	<div>
+		{% component "contactform" %}
+
 	</div>
 </div>

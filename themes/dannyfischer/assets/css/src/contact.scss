@@ -1,0 +1,43 @@
+// CONTACT FORM PLUGIN
+.contact-form {
+	display: block;
+	padding: 15px;
+	width: 100%;
+	max-width: 900px;
+	background: #eeeeee;
+	margin: 30px auto 0;
+	letter-spacing: 0.05em;
+	font-family: $font_B;
+	font-size: 1rem;
+	input[type="text"], textarea {
+		line-height: 150%;
+		background: #eeeeee;
+		font-size: 100%;
+		width: 100%;
+		max-width: 100%;
+		margin: 10px 0 10px 0;
+		border: #999 1px solid;
+		border-radius: 3px;
+	}
+	input[type="text"] {
+		@media #{$large} {
+			width: 50%;
+		}
+	}
+	button {
+		font-size: 1em;
+		cursor: pointer;
+		background-color: transparent;
+		color: black;
+		border: 2px solid black;
+		font-weight: bold;
+		padding: 10px;
+		margin-top: 10px;
+		 &:hover {
+			 background-color: black;
+			 color: white;
+			 border: 2px black solid;
+		 }
+	}
+}
+

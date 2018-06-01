@@ -1,0 +1,28 @@
+.upcomingevents {
+	background: #eeeeee;
+	padding: 10px;
+	font-family: $font_B;
+	@media #{$large} {
+		width: 66%;
+		margin: 0 auto;
+		font-size: 1.5rem;
+	}
+}
+
+.events--title {
+	font-size: 1em;
+}
+
+.events--date {
+	font-size: 0.8em;
+	margin: 5px 0;
+}
+
+.events--venue {
+	font-size: 0.75em;
+	margin: 5px 0;
+}
+
+.events--description {
+	display: none;
+}

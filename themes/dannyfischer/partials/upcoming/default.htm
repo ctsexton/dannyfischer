@@ -1,0 +1,11 @@
+<ul class="upcomingevents">
+{% for event in __SELF__.events %}
+<li>
+    <div class="events--title">{{ event.title }}</div>
+	<div class="events--date">{{ event.format_date }}</div>
+    <div class="events--venue">{{ event.venue }}</div>
+    <div class="events--description">{{ event.description | raw}}</div>
+</li>
+{% partial 'divider' %}
+{% endfor %}
+</ul>
