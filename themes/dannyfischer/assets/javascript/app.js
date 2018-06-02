@@ -2,21 +2,24 @@ function setupWebpage() {
 
 	var scroller = function (button, element) {
 		$(button).on("click", function(event){
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: $(element).position().top
-        }, 500, 'swing');
-});
-	}
-
-	var removeClass = function (buttonId, elementId, toAdd) {
-		$(buttonId).on('click', function() {
-			$(elementId).removeClass(toAdd);
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: $(element).position().top
+			}, 500, 'swing');
 		});
 	}
-	var addClass = function (buttonId, elementId, toRemove) {
+
+	// when element buttonId is clicked, class toRemove is removed from elementId
+	var removeClass = function (buttonId, elementId, toRemove) {
+		$(buttonId).on('click', function() {
+			$(elementId).removeClass(toRemove);
+		});
+	}
+
+	// when element buttonId is clicked, class toAdd is added to elementId
+	var addClass = function (buttonId, elementId, toAdd) {
 		 $(buttonId).on('click', function() {
-			 $(elementId).addClass(toRemove);
+			 $(elementId).addClass(toAdd);
 		 });
 	 }
 
