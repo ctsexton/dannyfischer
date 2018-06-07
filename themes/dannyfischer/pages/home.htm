@@ -6,6 +6,8 @@ meta_description = "Danny Fischer - Melbourne drummer."
 is_hidden = 0
 
 [upcomingevents 'upcoming']
+[gallery]
+[biography]
 [contactform]
 ==
 <div class="cover cover-A" id="topdiv">
@@ -21,22 +23,11 @@ is_hidden = 0
 <div class="cover cover-B" id="showdiv">
 	<div class="title cover-B">
 		<div class="title-text">
-			Shows </div>
+			Shows
+		</div>
 	</div>
 	<div>
 		{% component 'upcoming' %}
-	</div>
-</div>
-<div class="cover cover-C" id='biodiv'>
-	<div class="title cover-C">
-		<div class="title-text">
-			Biography
-		</div>
-	</div>
-	<div class="container">
-		<div id="bio-text" class="text-box simple-text black-on-white">
-			{% content "bio" %}
-		</div>
 	</div>
 </div>
 <div class="cover cover-D" id="recdiv">
@@ -45,9 +36,15 @@ is_hidden = 0
 			Recordings
 		</div>
 	</div>
-	<div>
-		{% partial "recordings" %}
+	{% component "gallery" %}
+</div>
+<div class="cover cover-C" id='biodiv'>
+	<div class="title cover-C">
+		<div class="title-text">
+			Biography
+		</div>
 	</div>
+	{% component "biography" %}
 </div>
 <div class="cover cover-E" id="contactdiv">
 	<div class="title cover-E">

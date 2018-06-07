@@ -1,0 +1,7 @@
+fields:
+    bio:
+        label: 'Biography Editor'
+        span: full
+        size: giant
+        oc.commentPosition: above
+        type: richeditor

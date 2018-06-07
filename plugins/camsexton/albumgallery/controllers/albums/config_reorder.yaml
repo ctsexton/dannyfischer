@@ -1,0 +1,5 @@
+title: Albums
+nameFrom: title
+modelClass: CamSexton\AlbumGallery\Models\Gallery
+toolbar:
+    buttons: reorder_toolbar

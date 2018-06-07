@@ -1,0 +1,4 @@
+columns:
+    bio:
+        label: Bio
+        type: text

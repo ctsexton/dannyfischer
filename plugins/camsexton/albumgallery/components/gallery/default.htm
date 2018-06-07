@@ -1,0 +1,17 @@
+<div class="gallery">
+	{% for rec in __SELF__.albums %}
+	<div class="gallery--list-item">
+		<img class="gallery--image" src="{{ rec.image_file }}">
+		<a href="{{ rec.url }}">
+			<div class="gallery--overlay">
+				<div class="gallery--text">
+					<div class="gallery--artist">{{ rec.artist }}</div>
+					<div class="gallery--album">{{ rec.title }}</div>
+					<div class="gallery--album">{{ rec.year }}</div>
+					<div class="gallery--link">Listen/Buy</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>

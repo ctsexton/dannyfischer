@@ -1,0 +1,12 @@
+title: Biography
+modelClass: CamSexton\Biography\Models\Biography
+list: $/camsexton/biography/models/biography/columns.yaml
+recordUrl: 'camsexton/biography/biography/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: '1'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

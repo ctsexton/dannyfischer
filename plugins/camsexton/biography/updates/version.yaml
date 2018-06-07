@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table camsexton_biography_text'
+    - builder_table_create_camsexton_biography_text.php

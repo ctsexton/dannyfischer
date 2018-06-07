@@ -1,0 +1,11 @@
+plugin:
+    name: 'camsexton.biography::lang.plugin.name'
+    description: 'camsexton.biography::lang.plugin.description'
+    author: 'Cam Sexton'
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Bio
+        url: /camsexton/biography/biography/update/1
+        icon: icon-book

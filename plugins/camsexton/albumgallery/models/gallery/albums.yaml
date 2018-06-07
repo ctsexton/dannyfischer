@@ -1,0 +1,30 @@
+columns:
+    title:
+        label: Album
+        type: text
+        searchable: true
+        sortable: false
+    artist:
+        label: Artist
+        type: text
+        searchable: true
+        sortable: false
+    year:
+        label: Year
+        type: number
+        searchable: true
+        sortable: false
+    image_file:
+        label: 'Image Filename'
+        type: text
+        searchable: true
+        sortable: false
+    url:
+        label: Link
+        type: text
+        searchable: true
+        sortable: false
+    sort_order:
+        label: Order
+        type: number
+        sortable: true

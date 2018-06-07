@@ -1,0 +1,11 @@
+name: Biography
+modelClass: CamSexton\Biography\Models\Biography
+form: $/camsexton/biography/models/biography/fields.yaml
+defaultRedirect: camsexton/biography/biography
+create:
+    redirect: 'camsexton/biography/biography/update/:id'
+    redirectClose: camsexton/biography/biography
+update:
+    redirect: camsexton/biography/biography
+    redirectClose: camsexton/biography/biography
+preview: {  }

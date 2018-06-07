@@ -1,0 +1,11 @@
+plugin:
+    name: 'camsexton.albumgallery::lang.plugin.name'
+    description: 'camsexton.albumgallery::lang.plugin.description'
+    author: 'Cam Sexton'
+    icon: oc-icon-th-large
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Albums
+        url: camsexton/albumgallery/albums
+        icon: icon-th-large
