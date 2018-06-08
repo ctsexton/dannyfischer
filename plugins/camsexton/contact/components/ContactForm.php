@@ -40,7 +40,7 @@ class ContactForm extends ComponentBase
 			// Send email to me
 			Mail::send('camsexton.contact::mail.message', $vars, function($message) use ($vars) {
 
-				$message->to(vars['toAddress'], 'Web Admin');
+				$message->to($vars['toAddress'], 'Web Admin');
 				$message->subject('New contact form message from ' . $vars['name']);
 			});
 
