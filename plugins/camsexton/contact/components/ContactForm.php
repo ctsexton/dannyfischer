@@ -35,12 +35,12 @@ class ContactForm extends ComponentBase
 			throw new ValidationException($validation);
 		} else {
 			
-			$vars = ['name' => Input::get('name'), 'email' => Input::get('email'), 'content' => Input::get('content')];
+			$vars = ['toAddress' => env('MAIL_TO_ADDRESS', null), 'name' => Input::get('name'), 'email' => Input::get('email'), 'content' => Input::get('content')];
 
 			// Send email to me
 			Mail::send('camsexton.contact::mail.message', $vars, function($message) use ($vars) {
 
-				$message->to('cameron.t.sexton@gmail.com', 'Web Admin');
+				$message->to(vars['toAddress'], 'Web Admin');
 				$message->subject('New contact form message from ' . $vars['name']);
 			});
 
