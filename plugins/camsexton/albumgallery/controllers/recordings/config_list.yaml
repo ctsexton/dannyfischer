@@ -1,14 +1,14 @@
-title: Albums
-modelClass: CamSexton\AlbumGallery\Models\Gallery
-list: $/camsexton/albumgallery/models/gallery/albums.yaml
-recordUrl: 'camsexton/albumgallery/albums/update/:id'
+title: Recordings
+modelClass: CamSexton\AlbumGallery\Models\Recording
+list: $/camsexton/albumgallery/models/recording/columns.yaml
+recordUrl: 'camsexton/albumgallery/recordings/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
 defaultSort:
     column: sort_order
-    direction: desc
+    direction: asc
 toolbar:
     buttons: list_toolbar
     search:

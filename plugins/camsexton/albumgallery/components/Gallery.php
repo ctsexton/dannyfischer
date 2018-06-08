@@ -13,20 +13,14 @@ class Gallery extends ComponentBase {
 	}
 
 	public function onRun() {
-		$this->getAlbums();
+		//$this->getAlbums();
+		$this->loadRecs();
 	}
 
-	public $albums;
+	public $recordings;
+	
+	protected function loadRecs() {
+		$this->recordings = \CamSexton\AlbumGallery\Models\Recording::all();
 
-	protected function getAlbums() {
-		$this->albums = Db::select("
-			SELECT
-			image_file,
-			url,
-			artist,
-			title,
-			year
-			FROM camsexton_albumgallery_items
-			ORDER BY sort_order");
 	}
 }

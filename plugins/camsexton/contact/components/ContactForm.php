@@ -40,14 +40,14 @@ class ContactForm extends ComponentBase
 			// Send email to me
 			Mail::send('camsexton.contact::mail.message', $vars, function($message) use ($vars) {
 
-				$message->to('cameron.t.sexton@gmail.com', 'Admin Person');
+				$message->to('cameron.t.sexton@gmail.com', 'Web Admin');
 				$message->subject('New contact form message from ' . $vars['name']);
 			});
 
 			// Send email copy to sender
 			Mail::send('camsexton.contact::mail.message_copy', $vars, function($message) use ($vars) {
 
-				$message->to($vars['email'], 'Cam Sexton');
+				$message->to($vars['email'], 'Danny Fischer');
 				$message->subject('Thanks for your message');
 			});
 

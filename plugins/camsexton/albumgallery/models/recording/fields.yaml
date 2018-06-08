@@ -1,0 +1,35 @@
+fields:
+    artist:
+        label: Artist
+        span: auto
+        required: 1
+        type: text
+    title:
+        label: 'Recording/Album Name'
+        span: auto
+        required: 1
+        type: text
+    url:
+        label: 'Purchase/Listen Link'
+        span: auto
+        required: 1
+        type: text
+    year:
+        label: 'Year of Release'
+        span: auto
+        required: 1
+        type: number
+    album_art:
+        label: 'Album Artwork'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        imageWidth: '300'
+        imageHeight: '300'
+        fileTypes: 'jpg,jpeg'
+        type: fileupload
+        commentAbove: .jpg/.jpeg

@@ -7,5 +7,5 @@ plugin:
 navigation:
     main-menu-item:
         label: Albums
-        url: camsexton/albumgallery/albums
+        url: camsexton/albumgallery/recordings
         icon: icon-th-large

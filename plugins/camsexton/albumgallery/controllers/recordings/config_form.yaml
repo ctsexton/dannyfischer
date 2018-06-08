@@ -1,0 +1,10 @@
+name: Recordings
+form: $/camsexton/albumgallery/models/recording/fields.yaml
+modelClass: CamSexton\AlbumGallery\Models\Recording
+defaultRedirect: camsexton/albumgallery/recordings
+create:
+    redirect: 'camsexton/albumgallery/recordings/update/:id'
+    redirectClose: camsexton/albumgallery/recordings
+update:
+    redirect: camsexton/albumgallery/recordings
+    redirectClose: camsexton/albumgallery/recordings

@@ -1,0 +1,5 @@
+title: Recordings
+nameFrom: title
+modelClass: CamSexton\AlbumGallery\Models\Recording
+toolbar:
+    buttons: reorder_toolbar
