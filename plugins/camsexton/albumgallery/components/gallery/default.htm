@@ -1,6 +1,5 @@
-
 <div class="gallery">
-	{% for rec in __SELF__.recordings %}
+	{% for rec in __SELF__.albumgallery %}
 	<div class="gallery--list-item">
 		<img class="gallery--image" src="{{ rec.album_art.getPath() }}">
 		<a href="{{ rec.url }}">

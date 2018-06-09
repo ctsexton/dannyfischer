@@ -1,7 +1,7 @@
 <?php namespace CamSexton\AlbumGallery\Components;
 
 use Cms\Classes\ComponentBase;
-use Db;
+use CamSexton\AlbumGallery\Models\Recording;
 
 class Gallery extends ComponentBase {
 	//
@@ -12,15 +12,10 @@ class Gallery extends ComponentBase {
 		];
 	}
 
+	public $albumgallery;
+
 	public function onRun() {
-		//$this->getAlbums();
-		$this->loadRecs();
+		$this->albumgallery = Recording::orderBy('sort_order', 'asc')->get();
 	}
 
-	public $recordings;
-	
-	protected function loadRecs() {
-		$this->recordings = \CamSexton\AlbumGallery\Models\Recording::all();
-
-	}
 }
