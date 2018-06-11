@@ -47,6 +47,11 @@
 
 .contact-info {
 	margin: 10px 0 50px;
+	font-size: 0.8rem;
+
+	@media #{$large} {
+		font-size: 1rem;
+	}
 }
 
 .contact-image {

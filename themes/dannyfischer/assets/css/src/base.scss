@@ -75,15 +75,6 @@
 	margin: 0 auto;
 }
 
-#bio-text {
-	width: 100%;
-	@media #{$large} {
-		flex-basis: 60%;
-		flex-grow: 1;
-		max-width: 100%;
-	}
-}
-
 .leading-image {
 	width: 100%;
 	height: 100%;
@@ -105,3 +96,13 @@
 .divider {
 	margin: 20px 0;
 }
+
+.bio-text {
+	width: 100%;
+	@media #{$large} {
+		flex-basis: 60%;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+}
+
