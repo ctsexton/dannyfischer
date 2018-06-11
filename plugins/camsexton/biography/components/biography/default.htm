@@ -1,7 +1,5 @@
-<div class="container">
-	<div id="bio-text" class="text-box simple-text black-on-white">
-		{% for texts in __SELF__.biography %}
-		{{texts.bio|raw}}
-		{% endfor %}
-	</div>
+<div id="bio-text" class="text-box simple-text black-on-white">
+	{% for texts in __SELF__.biography %}
+	{{texts.bio|raw}}
+	{% endfor %}
 </div>

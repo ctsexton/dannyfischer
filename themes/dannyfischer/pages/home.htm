@@ -8,7 +8,7 @@ is_hidden = 0
 [upcomingevents 'upcoming']
 [gallery]
 [biography]
-[contactform]
+[contactform 'contact']
 ==
 <div class="cover cover-A" id="topdiv">
 	<div class="main-title--container">
@@ -26,7 +26,10 @@ is_hidden = 0
 			Shows
 		</div>
 	</div>
-	{% component 'upcoming' %}
+	<div class="container content">
+		<img src="storage/app/media/shows.png" class="leading-image"></img>
+		{% component 'upcoming' %}
+	</div>
 </div>
 <div class="cover cover-D" id="recdiv">
 	<div class="title cover-D">
@@ -42,7 +45,10 @@ is_hidden = 0
 			Biography
 		</div>
 	</div>
-	{% component "biography" %}
+	<div class="container content">
+		<img src="storage/app/media/bio.jpg" class="leading-image"></img>
+		{% component "biography" %}
+	</div>
 </div>
 <div class="cover cover-E" id="contactdiv">
 	<div class="title cover-E">
@@ -50,5 +56,8 @@ is_hidden = 0
 			Teaching
 		</div>
 	</div>
-	{% component "contactform" %}
+	<div class="container content-wide">
+		{% component "contact" %}
+		<img src="storage/app/media/teaching.jpg" class="contact-image"></img>
+	</div>
 </div>

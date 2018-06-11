@@ -1,15 +1,17 @@
 // CONTACT FORM PLUGIN
 .contact-form {
+	order: 1;
 	display: block;
 	padding: 15px;
 	width: 100%;
 	background: #eeeeee;
-	margin: 30px auto 0;
+	margin: 0 auto;
 	letter-spacing: 0.05em;
 	font-family: $font_B;
 	font-size: 1rem;
 	@media #{$large} {
-		max-width: 75%;
+		width: 50%;
+		order: 0;
 	}
 	input[type="text"], textarea {
 		line-height: 150%;
@@ -23,7 +25,7 @@
 	}
 	input[type="text"] {
 		@media #{$large} {
-			width: 50%;
+			width: 100%;
 		}
 	}
 	button {
@@ -40,6 +42,21 @@
 			 color: white;
 			 border: 2px black solid;
 		 }
+	}
+}
+
+.contact-info {
+	margin: 10px 0 50px;
+}
+
+.contact-image {
+	order: 0;
+	width: 100%;
+	height: 100%;
+	@media #{$large} {
+		order: 1;
+		width: 50%;
+		height: 50%;
 	}
 }
 

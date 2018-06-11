@@ -11,7 +11,7 @@
 	line-height: 1em;
 	color: white;
 	@media #{$large} {
-		font-size: 7vw;
+		font-size: 5vw;
 	}
 }
 
@@ -59,7 +59,7 @@
 			rgba(0,0,0,0.5),
 			rgba(0,0,0,0.5)
 		),
-		url('/storage/app/media/vampires.jpg');
+		url('/storage/app/media/cover-photo.jpg');
 }
 
 .cover-B {
