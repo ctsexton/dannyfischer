@@ -1,0 +1,33 @@
+title = "Blog Post"
+url = "/words/:slug"
+layout = "blog"
+is_hidden = 0
+
+[blogPost 'customBlogPost']
+slug = "{{ :slug }}"
+categoryPage = "home"
+
+[blogPosts 'customPostList']
+pageNumber = "{{ :page }}"
+postsPerPage = 100
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = 404
+postPage = "blog-post"
+==
+<div class="cover cover-D" id='biodiv'>
+	<div class="title cover-D">
+		<div class="title-text">
+			Writing
+		</div>
+	</div>
+	<div class="blog--content">
+		<div class="blog--post-container">
+			{% component "customBlogPost" %}
+		</div>
+		<div class="blog--list-container">
+			Latest posts:
+			{% component "customPostList" %}
+		</div>
+	</div>
+</div>

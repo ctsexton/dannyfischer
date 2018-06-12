@@ -1,0 +1,20 @@
+==
+<!DOCTYPE html>
+<html lang="en">
+    {% partial "head" %}
+    <body class="blog--body">
+        <header>
+            {% partial "menu" %}
+        </header>
+		{% page %}
+        <footer>
+        <script src="{{ [
+                '@jquery',
+            ]|theme }}">
+        </script>
+        {% scripts %}
+        {% styles %}
+		{% framework extras %}
+        </footer>
+    </body>
+</html>

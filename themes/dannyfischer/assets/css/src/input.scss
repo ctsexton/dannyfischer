@@ -6,11 +6,12 @@
  * Make sure to keep these in order to maintain cascade.
  */
 
-@import "reset";
 @import "theme";
+@import "reset";
 @import "base";
 @import "nav";
 @import "home";
 @import "events";
 @import "contact";
 @import "gallery";
+@import "blog";
