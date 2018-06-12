@@ -2,11 +2,12 @@
 <div class="menu-base">
 	<div id="hamburger" class="hamburger"></div>
 	<ul id="menu--list" class="menu--list menu--mobile__closed">
-		<li id="menu--title">danny fischer</li>
-		<li id="shows">Shows</li>
-		<li id="recs">Recordings</li>
-		<li id="bio">Biography</li>
-		<li id="contact">Teaching</li>
-		<li id="writing"><a href="words/latest">Writing</a></li>
+		<li id="menu--title"><a id="menu--title-link">danny fischer</a></li>
+		<li id="shows"><a href="" id="shows-link">Shows</a></li>
+		<li id="recs"><a id="recs-link">Recordings</a></li>
+		<li id="bio"><a id="bio-link">Biography</a></li>
+		<li id="contact"><a id="contact-link">Teaching</a></li>
+		<li id="writing"><a href="{{customPostList.posts.toArray.data[0].url}}">Writing</a></li>
+
 	</ul>
 </div>
