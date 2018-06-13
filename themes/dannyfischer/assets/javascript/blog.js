@@ -1,4 +1,4 @@
-function blogLoad() {
+$(function () {
 	var elements = [
 		['#menu--title-link', '#topdiv'],
 		['#shows-link', '#showdiv'],
@@ -7,11 +7,16 @@ function blogLoad() {
 		['#contact-link', '#contactdiv']
 	];
 
-	$(document).ready(function() {
-		elements.map(function(elem) {
-			$(elem[0]).attr("href", '/' + elem[1]);
-			console.log('elem ' + elem[0] + ' mapped to ' + elem[1]);
-		});
+	// when element buttonId is clicked, class toAdd is added to elementId
+	var addClass = function (buttonId, elementId, toAdd) {
+		 $(buttonId).on('click', function() {
+			 $(elementId).addClass(toAdd);
+		 });
+	 }
+
+	elements.map(function(elem) {
+		$(elem[0]).attr("href", '/' + elem[1]);
+		console.log('elem ' + elem[0] + ' mapped to ' + elem[1]);
 	});
-}
-window.blogLoad();
+	addClass('#hamburger', '#menu--list', 'menu--mobile__open');
+});

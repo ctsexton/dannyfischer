@@ -31,14 +31,30 @@ function setupWebpage() {
 		['#contact', '#contactdiv']
 	];
 
-	$(document).ready(function() {
-		elements.map(function (element) {
-			scroller(element[0], element[1]);
-			removeClass(element[0], '#menu--list', 'menu--mobile__open');
-		});
-
-		addClass('#hamburger', '#menu--list', 'menu--mobile__open');
+	elements.map(function (element) {
+		scroller(element[0], element[1]);
+		removeClass(element[0], '#menu--list', 'menu--mobile__open');
 	});
-}
 
-window.setupWebpage();
+	addClass('#hamburger', '#menu--list', 'menu--mobile__open');
+}
+// save and remove window.location.hash to prevent scroll
+var target = window.location.hash;
+window.location.hash = "";
+
+// Set up page when ready and scroll to top
+$(function () {
+	window.setupWebpage();
+	if(target) {
+		window.scrollTo(0,0);
+	}
+});
+
+// when all images loaded, scroll to target if exists
+$(document).imagesLoaded(function() {
+	if(target) {
+		var hash = document.getElementById(target.split("").slice(1).join(""));
+		hash.scrollIntoView();
+		window.location.hash = target;
+	}
+});

@@ -12,12 +12,14 @@
         <footer>
         <script src="{{ [
                 '@jquery',
+				'../../node_modules/imagesloaded/imagesloaded.pkgd.min.js',
+      
 				'assets/javascript/app.js'
             ]|theme }}">
         </script>
+		{% framework extras %}
         {% scripts %}
         {% styles %}
-		{% framework extras %}
         </footer>
     </body>
 </html>
