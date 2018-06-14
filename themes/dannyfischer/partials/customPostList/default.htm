@@ -1,7 +1,7 @@
 {% set posts = __SELF__.posts %}
-<ul class="blog--post-list">
+<ul id="latest-posts--list" class="blog--post-list blog--post-list__closed">
     {% for post in posts %}
-        <li>
+        <li  class="blog--post-list-item__closed">
             <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
