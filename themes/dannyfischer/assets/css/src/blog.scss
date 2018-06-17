@@ -54,6 +54,20 @@
 		width: auto;
 		height: auto;
 	}
+	p {
+		margin: 0.75em 0;
+	}
+	a {
+		text-decoration: none;
+
+		&:link {
+			color: blue;
+		}
+
+		&:visited {
+			color: purple;
+		}
+	}
 }
 
 .blog--list-container {
