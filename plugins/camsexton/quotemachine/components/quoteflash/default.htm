@@ -1,1 +1,23 @@
-{{ __SELF__.quoteArr|raw }}
+<div class="quote quote--text" id="quoteText">
+</div>
+<div class="quote quote--name" id="quoteName">
+</div>
+<script>
+	function quoteMachine() {
+		let quoteArr = JSON.parse('{{ __SELF__.quoteArr }}'.replace(/&quot;/g, '"'));
+
+		function quoteFlash(quote) {
+			document.getElementById('quoteName').innerHTML = quote.name;
+			document.getElementById('quoteText').innerHTML = '"' + quote.quote + '"';
+		}
+
+		function loop(current) {
+			quoteFlash(quoteArr[current]);
+			setTimeout(function() {
+				loop((current + 1) % quoteArr.length);
+			}, 3000);
+		}
+
+		loop(0);
+	}
+</script>

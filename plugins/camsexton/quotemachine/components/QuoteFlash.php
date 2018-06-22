@@ -13,7 +13,7 @@ class Quoteflash extends ComponentBase {
 
 	public $quoteArr;
 	public function onRun() {
-		$this->quoteArr = json_encode(Quote::all());
+		$this->quoteArr = Quote::all()->toJson();
 	}
 
 }

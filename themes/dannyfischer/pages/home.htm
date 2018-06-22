@@ -24,13 +24,16 @@ postPage = "blog-post"
 [quoteflash]
 ==
 <div class="cover cover-A" id="topdiv">
-	<div class="main-title--container">
+	<div class="main-title--container-left">
 		<div class="main-title">
 			Danny<br> Fischer.
 		</div>
 		<div class="main-subtitle">
 			Drummer.
 		</div>
+	</div>
+	<div class="main-title--container-right">
+	{% component "quoteflash" %}
 	</div>
 </div>
 <div class="cover cover-B" id="showdiv">
@@ -61,7 +64,6 @@ postPage = "blog-post"
 	<div class="container content">
 		<img src="storage/app/media/bio.jpg" class="leading-image"></img>
 		{% component "biography" %}
-		{% component "quoteflash" %}
 	</div>
 </div>
 <div class="cover cover-E" id="contactdiv">

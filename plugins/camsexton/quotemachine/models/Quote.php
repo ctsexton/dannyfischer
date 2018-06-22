@@ -19,4 +19,5 @@ class Quote extends Model
      * @var string The database table used by the model.
      */
     public $table = 'camsexton_quotemachine_quotes';
+	protected $jsonable = ['quote'];
 }
