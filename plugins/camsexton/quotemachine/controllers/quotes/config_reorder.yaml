@@ -1,0 +1,4 @@
+title: Quotes
+modelClass: CamSexton\Quotemachine\Models\Quote
+toolbar:
+    buttons: reorder_toolbar

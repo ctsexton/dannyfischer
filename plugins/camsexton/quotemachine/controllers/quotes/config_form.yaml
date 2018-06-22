@@ -1,0 +1,14 @@
+name: Quotes
+modelClass: CamSexton\Quotemachine\Models\Quote
+form: $/camsexton/quotemachine/models/quote/fields.yaml
+defaultRedirect: camsexton/quotemachine/quotes
+create:
+    title: 'Add Quote'
+    redirect: 'camsexton/quotemachine/quotes/update/:id'
+    redirectClose: camsexton/quotemachine/quotes
+update:
+    title: 'Edit Quote'
+    redirect: camsexton/quotemachine/quotes
+    redirectClose: camsexton/quotemachine/quotes
+preview:
+    title: 'Preview Quote'

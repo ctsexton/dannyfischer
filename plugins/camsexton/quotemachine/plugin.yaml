@@ -1,0 +1,11 @@
+plugin:
+    name: 'camsexton.quotemachine::lang.plugin.name'
+    description: 'camsexton.quotemachine::lang.plugin.description'
+    author: 'Cam Sexton'
+    icon: oc-icon-quote-left
+    homepage: ''
+navigation:
+    quote-controller:
+        label: Quotes
+        url: camsexton/quotemachine/quotes
+        icon: icon-quote-left

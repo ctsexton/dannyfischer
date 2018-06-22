@@ -5,18 +5,23 @@ meta_title = "Danny Fischer"
 meta_description = "Danny Fischer - Melbourne drummer."
 is_hidden = 0
 
-[upcomingevents 'upcoming']
-[gallery]
-[biography]
-[contactform 'contact']
+[upcomingevents upcoming]
 
-[blogPosts 'customPostList']
+[gallery]
+
+[biography]
+
+[contactform contact]
+
+[blogPosts customPostList]
 pageNumber = "{{ :page }}"
 postsPerPage = 1
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = 404
 postPage = "blog-post"
+
+[quoteflash]
 ==
 <div class="cover cover-A" id="topdiv">
 	<div class="main-title--container">
@@ -56,6 +61,7 @@ postPage = "blog-post"
 	<div class="container content">
 		<img src="storage/app/media/bio.jpg" class="leading-image"></img>
 		{% component "biography" %}
+		{% component "quoteflash" %}
 	</div>
 </div>
 <div class="cover cover-E" id="contactdiv">

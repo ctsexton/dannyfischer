@@ -1,9 +1,9 @@
 <?php namespace CamSexton\Biography\Components;
 
 use Cms\Classes\ComponentBase;
-use Db;
+use CamSexton\Biography\Models\Biography;
 
-class Biography extends ComponentBase {
+class BiographyComponent extends ComponentBase {
 	//
 	public function componentDetails() {
 		return [
@@ -12,17 +12,8 @@ class Biography extends ComponentBase {
 		];
 	}
 
-	public function onRun() {
-		$this->getBio();
-	}
-
 	public $biography;
-
-	protected function getBio() {
-		$this->biography = Db::select("
-			SELECT
-			bio
-			FROM camsexton_biography_text
-			");
+	public function onRun() {
+		$this->biography = Biography::first();
 	}
 }

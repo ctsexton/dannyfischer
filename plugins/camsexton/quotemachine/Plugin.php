@@ -1,4 +1,4 @@
-<?php namespace CamSexton\Biography;
+<?php namespace CamSexton\Quotemachine;
 
 use System\Classes\PluginBase;
 
@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
 		return [
-			'CamSexton\Biography\Components\BiographyComponent' => 'biography'
+			'CamSexton\Quotemachine\Components\QuoteFlash' => 'quoteflash'
 		];
     }
 

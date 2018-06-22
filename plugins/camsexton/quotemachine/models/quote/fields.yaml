@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Name
+        span: left
+        placeholder: 'John Smith'
+        required: 1
+        type: text
+    quote:
+        label: 'Quote Text'
+        size: tiny
+        span: left
+        required: 1
+        attributes:
+            maxlength: '140'
+        type: textarea
+        commentAbove: 'Do NOT include quotation marks'

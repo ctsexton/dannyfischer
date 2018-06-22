@@ -1,0 +1,15 @@
+title: Quotes
+modelClass: CamSexton\Quotemachine\Models\Quote
+list: $/camsexton/quotemachine/models/quote/columns.yaml
+recordUrl: 'camsexton/quotemachine/quotes/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
