@@ -1,9 +1,11 @@
-<div class="quote quote--text" id="quoteText">
-</div>
-<div class="quote quote--name" id="quoteName">
+<div class="quote--outer">
+	<div class="quote">
+		<div class="quote--text" id="quoteText"></div>
+		<div class="quote--name" id="quoteName"></div>
+	</div>
 </div>
 <script>
-	function quoteMachine() {
+	function quoteMachine(time) {
 		let quoteArr = JSON.parse('{{ __SELF__.quoteArr }}'.replace(/&quot;/g, '"'));
 
 		function quoteFlash(quote) {
@@ -15,7 +17,7 @@
 			quoteFlash(quoteArr[current]);
 			setTimeout(function() {
 				loop((current + 1) % quoteArr.length);
-			}, 3000);
+			}, time);
 		}
 
 		loop(0);

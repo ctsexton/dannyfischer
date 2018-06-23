@@ -23,17 +23,17 @@ postPage = "blog-post"
 
 [quoteflash]
 ==
-<div class="cover cover-A" id="topdiv">
-	<div class="main-title--container-left">
-		<div class="main-title">
+<div class="cover cover-A remove-padding" id="topdiv">
+	<div class="main">
+		<div class="main--title">
 			Danny<br> Fischer.
 		</div>
-		<div class="main-subtitle">
+		<div class="">
+			{% component "quoteflash" %}
+		</div>
+		<div class="main--subtitle">
 			Drummer.
 		</div>
-	</div>
-	<div class="main-title--container-right">
-	{% component "quoteflash" %}
 	</div>
 </div>
 <div class="cover cover-B" id="showdiv">

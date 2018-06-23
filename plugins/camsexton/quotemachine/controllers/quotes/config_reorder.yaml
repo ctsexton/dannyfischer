@@ -1,4 +1,5 @@
 title: Quotes
+nameFrom: quote
 modelClass: CamSexton\Quotemachine\Models\Quote
 toolbar:
     buttons: reorder_toolbar
