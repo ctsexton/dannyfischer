@@ -12,8 +12,10 @@ class Quoteflash extends ComponentBase {
 	}
 
 	public $quoteArr;
+	public $firstQuote;
 	public function onRun() {
 		$this->quoteArr = Quote::all()->toJson();
+		$this->firstQuote = Quote::first();
 	}
 
 }

@@ -31,12 +31,17 @@ function setupWebpage() {
 		['#contact', '#contactdiv']
 	];
 
+	// add scroll and close menu functionality to menu items
 	elements.map(function (element) {
 		scroller(element[0], element[1]);
 		removeClass(element[0], '#menu--list', 'menu--mobile__open');
 	});
 
+	// add open menu functionality to hamburger button
 	addClass('#hamburger', '#menu--list', 'menu--mobile__open');
+
+	// Start rotating quotes with quoteMachine plugin
+	quoteMachine(5000);
 }
 // save and remove window.location.hash to prevent scroll
 var target = window.location.hash;
@@ -44,11 +49,10 @@ window.location.hash = "";
 
 // Set up page when ready and scroll to top
 $(function () {
-	window.setupWebpage();
+	setupWebpage();
 	if(target) {
 		window.scrollTo(0,0);
 	}
-	quoteMachine(3000);
 });
 
 // when all images loaded, scroll to target if exists
