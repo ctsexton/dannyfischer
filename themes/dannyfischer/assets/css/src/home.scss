@@ -19,12 +19,10 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: left;
-	overflow: hidden;
 	height: 100%;
 	width: 100%;
-
 }
 
 .main--title {
