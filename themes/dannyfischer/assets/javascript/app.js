@@ -48,7 +48,7 @@ $(function () {
 	if(target) {
 		window.scrollTo(0,0);
 	}
-	quoteMachine(5000);
+	quoteMachine(3000);
 });
 
 // when all images loaded, scroll to target if exists

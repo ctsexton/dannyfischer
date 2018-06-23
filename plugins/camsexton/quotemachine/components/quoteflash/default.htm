@@ -1,4 +1,4 @@
-<div class="quote--outer">
+<div id="quoteBox" class="quote--outer">
 	<div class="quote">
 		<div class="quote--text" id="quoteText"></div>
 		<div class="quote--name" id="quoteName"></div>
@@ -7,6 +7,12 @@
 <script>
 	function quoteMachine(time) {
 		let quoteArr = JSON.parse('{{ __SELF__.quoteArr }}'.replace(/&quot;/g, '"'));
+		if (quoteArr.length === 0) {
+			document.getElementById('quoteBox').style.visibility="hidden";
+			return;
+		} else {
+			document.getElementById('quoteBox').style.visibility="visible";
+		}
 
 		function quoteFlash(quote) {
 			document.getElementById('quoteName').innerHTML = quote.name;
