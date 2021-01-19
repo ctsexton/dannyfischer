@@ -1,0 +1,11 @@
+plugin:
+    name: teaching
+    description: teaching services list
+    author: 'Cam Sexton'
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Services
+        url: /camsexton/teaching/services/update/1
+        icon: icon-book

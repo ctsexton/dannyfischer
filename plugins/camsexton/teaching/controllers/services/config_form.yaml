@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Service
+
+# Model Form Field configuration
+form: $/camsexton/teaching/models/services/fields.yaml
+
+# Model Class name
+modelClass: Camsexton\Teaching\Models\Services
+
+# Default redirect location
+defaultRedirect: camsexton/teaching/services
+
+# Create page
+create:
+    title: Create Service
+    redirect: camsexton/teaching/services/update/:id
+    redirectClose: camsexton/teaching/services
+
+# Update page
+update:
+    title: Edit Service
+    redirect: camsexton/teaching/services
+    redirectClose: camsexton/teaching/services
+
+# Preview page
+preview:
+    title: Preview Service

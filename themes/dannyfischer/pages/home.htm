@@ -5,23 +5,15 @@ meta_title = "Danny Fischer"
 meta_description = "Danny Fischer - Melbourne drummer."
 is_hidden = 0
 
-[upcomingevents upcoming]
-
 [gallery]
 
 [biography]
 
 [contactform contact]
 
-[blogPosts customPostList]
-pageNumber = "{{ :page }}"
-postsPerPage = 1
-noPostsMessage = "No posts found"
-sortOrder = "published_at desc"
-categoryPage = 404
-postPage = "blog-post"
-
 [quoteflash]
+
+[ServicesComponent]
 ==
 <div class="cover cover-A remove-padding" id="topdiv">
 	<div class="main">
@@ -44,7 +36,6 @@ postPage = "blog-post"
 	</div>
 	<div class="container content">
 		<img src="storage/app/media/shows.png" class="leading-image"></img>
-		{% component 'upcoming' %}
 	</div>
 </div>
 <div class="cover cover-C" id="recdiv">
@@ -73,7 +64,10 @@ postPage = "blog-post"
 		</div>
 	</div>
 	<div class="container content-wide">
+    <div class="contact-info">
+    {% component "ServicesComponent" %}
 		{% component "contact" %}
+    </div>
 		<img src="storage/app/media/teaching.jpg" class="contact-image"></img>
 	</div>
 </div>
