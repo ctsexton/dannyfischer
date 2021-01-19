@@ -82,7 +82,7 @@ class Plugin extends PluginBase
         return [
             'teaching' => [
                 'label'       => 'teaching',
-                'url'         => Backend::url('camsexton/teaching/services'),
+                'url'         => Backend::url('camsexton/teaching/services/update/1'),
                 'icon'        => 'icon-leaf',
                 'permissions' => ['camsexton.teaching.*'],
                 'order'       => 500,
